@@ -21,12 +21,29 @@
 
     .nav_links li {
         list-style-type: none;
+        position: relative;
     }
 
     .nav_links li a {
         text-decoration: none;
         font-size: 1.6rem;
         color: #5988FF;
+    }
+
+    .nav_links li a::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -8px;
+        width: 0;
+        height: 8px;
+        border-radius: 0.4rem;
+        background-color: #5988FF;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav_links li a:hover::after {
+        width: 100%;
     }
 
     .header_bubble {
@@ -108,6 +125,16 @@
             li {
                 list-style-type: none;
             }
+
+            li a img {
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    transform: translateX(-8px);
+                    opacity: 0.7;
+                }
+            }
+
         }
     }
 }

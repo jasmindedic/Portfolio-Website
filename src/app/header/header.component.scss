@@ -140,3 +140,11 @@
         }
     }
 }
+
+/* Media queries for header section */
+@media (max-width: 1240px) {
+    .header_social_links_scroll_line {
+        display: none !important;
+    }
+
+}

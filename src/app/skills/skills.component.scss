@@ -30,10 +30,31 @@
             flex-direction: column;
             align-items: center;
             gap: 0.6rem;
+            cursor: default;
 
             p {
                 font-family: "Montserrat", sans-serif;
                 color: #fff;
+            }
+
+            img {
+                transition: all 0.2s ease;
+            }
+
+            p {
+                transition: all 0.2s ease-in-out;
+            }
+
+            &:hover {
+                img {
+                    transform: translateY(-12px);
+
+                }
+
+                p {
+                    transform: translateY(-12px);
+                    opacity: 0.8;
+                }
             }
         }
     }

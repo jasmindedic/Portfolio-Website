@@ -1,0 +1,126 @@
+.work_one_container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6rem;
+
+    .my_work_headliner {
+        position: relative;
+
+        h2 {
+            font-family: "baloo 2", sans-serif;
+            font-size: 4.5rem;
+            font-weight: 700;
+            color: #5988FF;
+        }
+
+        p {
+            font-family: "Montserrat", sans-serif;
+            padding-bottom: 4rem;
+            font-size: 1.2rem;
+        }
+
+        img {
+            position: absolute;
+            left: 20rem;
+            top: -3rem;
+        }
+
+    }
+
+
+    .pic_text_container {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        position: relative;
+
+        /* Positioning for bubble */
+        .join_small_bubble {
+            position: absolute;
+            right: 50px;
+            top: -150px;
+        }
+
+        .my_work_img {
+            box-shadow: 5px 5px 9px -4px gray;
+            width: 36rem;
+            height: 22rem;
+            transition: all 0.2s ease-in-out;
+            /* width: 30rem;
+            height: 20rem; */
+
+            &:hover {
+                transform: translateY(-20px);
+            }
+        }
+
+        .work_one_text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+
+            h3 {
+                font-family: "baloo 2", sans-serif;
+                font-size: 2.5rem;
+                color: #5988FF;
+            }
+
+            .tech_stack {
+                font-family: "Montserrat", sans-serif;
+                font-size: 1.5rem;
+                color: #5988FF;
+            }
+
+            .work_one_desc {
+                font-family: "Montserrat", sans-serif;
+                font-size: 1rem;
+                color: black;
+            }
+
+            .github_btn_container {
+                padding-top: 1rem;
+
+                .github_btn {
+                    position: relative;
+                    z-index: 2;
+                    background-color: var(--background-color);
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                    padding: 0.8rem 2.2rem;
+                    color: #5988FF;
+                    border-radius: 0.4rem;
+                    border-color: #5988FF;
+                    border-width: 2px;
+                    --background-color: #fff;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+
+
+                .github_btn::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+                    background-color: #5988FF;
+                    transition: transform 300ms ease-in-out;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                }
+
+                .github_btn:hover::before,
+                .github_btn:focus::before {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+
+
+}

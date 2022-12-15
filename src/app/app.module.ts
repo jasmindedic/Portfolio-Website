@@ -8,6 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { WorkOneComponent } from './work-one/work-one.component';
+import { WorkTwoComponent } from './work-two/work-two.component';
+import { WorkThirdComponent } from './work-third/work-third.component';
+import { WorkFourthComponent } from './work-fourth/work-fourth.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { MyWorkComponent } from './my-work/my-work.component';
     HeaderComponent,
     AboutMeComponent,
     SkillsComponent,
-    MyWorkComponent
+    MyWorkComponent,
+    WorkOneComponent,
+    WorkTwoComponent,
+    WorkThirdComponent,
+    WorkFourthComponent
   ],
   imports: [
     BrowserModule,

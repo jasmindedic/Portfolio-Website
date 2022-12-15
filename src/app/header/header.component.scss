@@ -70,7 +70,10 @@
 
     .portfolio_img {
         position: absolute;
+        /* Added left - before it was only bottom */
+        left: -80px;
         bottom: 0;
+        width: 60rem;
     }
 
     .header-right-container {

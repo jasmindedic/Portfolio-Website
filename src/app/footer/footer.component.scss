@@ -1,0 +1,48 @@
+.footer_container {
+    background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .footer_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+
+        .copyright {
+            font-size: 1.2rem;
+        }
+    }
+
+
+
+    .footer_social_links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        transform: translateY(-10px);
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,11 +5,12 @@
     height: 100vh;
     background: linear-gradient(179.99deg, #FFFFFF 12.89%, #EAF0FF 91.39%);
 
-    .hamburger_menu {
+    .burger {
         position: absolute;
         right: 20px;
         top: 20px;
-        display: none
+        z-index: 4;
+        display: none;
     }
 }
 
@@ -345,4 +346,34 @@
         }
     }
 
+}
+
+/* Media query for height */
+@media(max-height: 770px) {
+    .logo {
+        width: 3rem;
+    }
+
+    .portfolio_img {
+        width: 70vw !important;
+        left: 15% !important;
+        right: 5% !important;
+        bottom: 0;
+    }
+
+    .header-headliner {
+        padding-right: 0rem !important;
+        padding-top: 1.8rem !important;
+        line-height: 1.8rem !important;
+
+        h2 {
+            font-size: 1.6rem !important;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-size: 3.6rem !important;
+            font-weight: 900;
+        }
+    }
 }

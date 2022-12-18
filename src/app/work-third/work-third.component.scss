@@ -56,9 +56,16 @@
             }
 
             .github_btn_container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5rem;
                 padding-top: 1rem;
 
+                /* Github button */
                 .github_btn {
+                    width: 9rem;
+                    height: 3.2rem;
                     position: relative;
                     z-index: 2;
                     background-color: var(--background-color);
@@ -71,8 +78,15 @@
                     border-width: 2px;
                     --background-color: #fff;
 
+                    a {
+                        text-decoration: none;
+                        color: #5988FF;
+                    }
+
                     &:hover {
-                        color: #fff;
+                        a {
+                            color: #fff;
+                        }
                     }
                 }
 
@@ -95,9 +109,136 @@
                 .github_btn:focus::before {
                     transform: scaleX(1);
                 }
+
+                /* Live test button */
+                .live_btn {
+                    width: 9rem;
+                    height: 3.2rem;
+                    position: relative;
+                    z-index: 2;
+                    background-color: var(--background-color);
+                    font-size: 1.1rem;
+                    cursor: pointer;
+                    padding: 0.8rem 2.2rem;
+                    color: #fff;
+                    border-radius: 0.4rem;
+                    border-color: #5988FF;
+                    border-width: 2px;
+                    --background-color: #5988FF;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        a {
+                            color: #5988FF;
+                        }
+                    }
+                }
+
+
+                .live_btn::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    z-index: -1;
+                    background-color: #fff;
+                    transition: transform 300ms ease-in-out;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                }
+
+                .live_btn:hover::before,
+                .live_btn:focus::before {
+                    transform: scaleX(1);
+                }
             }
         }
     }
 
+}
 
+/* Media queries */
+@media(max-width: 1230px) {
+    .pic_text_container {
+        flex-direction: column !important;
+        gap: 4rem;
+        align-items: center;
+
+        .work_third_text {
+            align-items: center !important;
+            text-align: center;
+
+            .work_third_desc {
+                text-align: center !important;
+            }
+        }
+
+        .work_3_bubble {
+            left: -20px !important;
+            top: 130px !important;
+        }
+    }
+
+    /* portfolio buttons */
+    .github_btn_container {
+        gap: 2rem !important;
+        padding-top: 1rem;
+
+    }
+}
+
+@media(max-width: 1015px) {
+    .pic_text_container {
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+    }
+}
+
+@media(max-width: 630px) {
+    .pic_text_container {
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+
+        .my_work_img {
+            width: 26rem !important;
+            height: 16rem !important;
+        }
+
+        .work_3_bubble {
+            left: -20px !important;
+            top: 60px !important;
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .pic_text_container {
+
+        .my_work_img {
+            width: 22rem !important;
+            height: 14rem !important;
+        }
+
+        .work_third_text {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+}
+
+@media(max-width: 385px) {
+    .pic_text_container {
+        .my_work_img {
+            width: 20rem !important;
+            height: 14rem !important;
+        }
+    }
 }

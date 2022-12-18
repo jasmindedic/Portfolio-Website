@@ -60,16 +60,50 @@
     }
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 860px) {
     .skills_icons {
         grid-template-columns: auto auto auto auto !important;
     }
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 675px) {
     .skills_icons {
         grid-template-columns: auto auto auto !important;
+        grid-gap: 5rem !important;
     }
 }
- */
+
+@media (max-width: 560px) {
+    .skills_icons {
+        grid-gap: 4rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .skills_icons {
+        grid-gap: 3rem !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .skills_icons {
+        align-items: flex-end;
+        grid-gap: 2.5rem !important;
+
+        img {
+            width: 4rem;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .skills_icons {
+        align-items: flex-end;
+        grid-gap: 2rem !important;
+
+        img {
+            width: 3rem;
+        }
+    }
+}

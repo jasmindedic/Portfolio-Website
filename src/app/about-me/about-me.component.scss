@@ -15,7 +15,7 @@
 
     .about_me_small_bubble {
         position: absolute;
-        top: 10%;
+        top: 9%;
         right: 20%;
     }
 
@@ -82,5 +82,43 @@
         .about_me_btn:focus::before {
             transform: scaleX(1);
         }
+    }
+}
+
+/* Media queries */
+@media(max-width: 930px) {
+    .about_me_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding-top: 6em;
+        padding-bottom: 6rem;
+        text-align: center;
+
+        .about_me_small_bubble {
+            position: absolute;
+            top: 3%;
+            right: 10%;
+        }
+    }
+
+    .about_me_right {
+        gap: 3rem !important;
+    }
+}
+
+@media(max-width: 450px) {
+    .about_me_container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media(max-width: 450px) {
+
+    /* Positioning bubbles */
+    .about_me_big_bubble {
+        width: 8rem;
+        top: -8% !important;
     }
 }

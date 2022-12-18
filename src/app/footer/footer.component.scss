@@ -46,3 +46,18 @@
         }
     }
 }
+
+
+/* Media queries */
+@media(max-width: 720px) {
+    .footer_container {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+    }
+}

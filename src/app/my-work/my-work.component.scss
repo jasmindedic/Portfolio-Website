@@ -21,3 +21,41 @@
         z-index: -1;
     }
 }
+
+/* Media queries */
+@media(max-width: 1240px) {
+    .join_big_bubble {
+        top: 10% !important;
+    }
+
+    .sharkie_big_bubble {
+        top: 28% !important;
+    }
+}
+
+@media(max-width: 1000px) {
+    .join_big_bubble {
+        left: 0;
+        top: 10% !important;
+    }
+
+    .sharkie_big_bubble {
+        top: 32% !important;
+        z-index: -1;
+        width: 20rem;
+    }
+}
+
+@media(max-width: 630px) {
+    .join_big_bubble {
+        left: 0;
+        top: 10% !important;
+        width: 10rem !important;
+    }
+
+    .sharkie_big_bubble {
+        top: 32% !important;
+        z-index: -1;
+        width: 15rem;
+    }
+}

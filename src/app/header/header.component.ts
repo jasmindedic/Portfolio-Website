@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  /* Variable for hamburger menu */
+  isMenuOpen = false;
+
+  /* Function to toggle the state of hamburger menu */
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 
   constructor() { }

@@ -122,3 +122,29 @@
         top: -8% !important;
     }
 }
+
+/* Media query for bigger screens */
+@media(min-width: 1650px) {
+
+    .about_me_container {
+        width: 100vw;
+        padding-top: 10rem;
+        padding-bottom: 8rem;
+        justify-content: center !important;
+        gap: 6rem;
+    }
+}
+
+@media(min-width: 1800px) {
+
+    .about_me_container {
+        gap: 8rem !important;
+    }
+}
+
+@media(min-width: 2000px) {
+
+    .about_me_container {
+        gap: 10rem !important;
+    }
+}

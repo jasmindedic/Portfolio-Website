@@ -8,6 +8,12 @@ import * as AOS from 'aos';
 })
 export class HeaderComponent implements OnInit {
 
+  showMenu = false;
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

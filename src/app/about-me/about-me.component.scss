@@ -46,20 +46,34 @@
         }
 
         .about_me_btn {
+            width: 15rem;
+            height: 3.2rem;
             position: relative;
             z-index: 2;
             background-color: var(--background-color);
             font-size: 1.1rem;
             cursor: pointer;
-            padding: 0.8rem 2.2rem;
+
             color: #5988FF;
             border-radius: 0.4rem;
             border-color: #5988FF;
             border-width: 2px;
             --background-color: #fff;
 
+            a {
+                text-decoration: none;
+                color: #5988FF;
+                border-radius: 0.4rem;
+                padding-left: 3.18rem;
+                padding-right: 3.18rem;
+                padding-top: 0.85rem;
+                padding-bottom: 0.85rem;
+            }
+
             &:hover {
-                color: #fff;
+                a {
+                    color: #fff;
+                }
             }
         }
 

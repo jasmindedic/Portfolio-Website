@@ -14,6 +14,7 @@ import { WorkThirdComponent } from './work-third/work-third.component';
 import { WorkFourthComponent } from './work-fourth/work-fourth.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     WorkThirdComponent,
     WorkFourthComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

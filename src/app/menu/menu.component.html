@@ -1,0 +1,22 @@
+<div class="menu_bar">
+    <div class="content">
+        <img class="logo" src="../../assets/img/icons_desktop/logo.png">
+        <div (click)="openMenu()" class="nav-container">
+            <input type="checkbox" [checked]="menuOpen">
+            <div>
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </div>
+        <div class="menu" [class.responsive]="menuOpen">
+            <!-- Blue logo -->
+        <img class="blue_logo" (click)="closeMenu('blue_logo')" src="../../assets/img/icons_mobile/blue_logo.png">
+            <!-- <a href="#my-start-site" (click)="closeMenu()">Home</a> -->
+            <a href="#about_me_container" (click)="closeMenu('about')">About me</a>
+            <a href="#skills_set" (click)="closeMenu('skills')">Skills set</a>
+            <a href="#my_work" (click)="closeMenu('projects')">My work</a>
+            <!-- <a href="#my-contact" (click)="closeMenu('about')">Contact</a> -->
+        </div>
+    </div>
+</div>

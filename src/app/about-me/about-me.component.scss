@@ -137,6 +137,18 @@
     }
 }
 
+
+@media(max-width: 360px) {
+    .about_me_container {
+        gap: 2rem;
+    }
+
+    h2 {
+        padding-top: 1rem;
+        font-size: 3rem !important;
+    }
+}
+
 /* Media query for bigger screens */
 @media(min-width: 1650px) {
 

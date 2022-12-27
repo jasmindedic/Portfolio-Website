@@ -121,6 +121,9 @@
 
                 /* Live test button */
                 .live_btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     width: 9rem;
                     height: 3.2rem;
                     position: relative;
@@ -138,6 +141,12 @@
                     a {
                         text-decoration: none;
                         color: #fff;
+                        border-radius: 0.4rem;
+                        padding-left: 2.8rem;
+                        padding-right: 2.8rem;
+                        padding-top: 0.85rem;
+                        padding-bottom: 0.85rem;
+                        white-space: nowrap;
                     }
 
                     &:hover {

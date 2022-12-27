@@ -51,6 +51,15 @@
         width: 100%;
     }
 
+    .logo_link {
+        margin-left: 0 !important;
+    }
+
+    .logo_link:hover::after {
+        width: 0%;
+        margin-left: 0rem !important;
+    }
+
 }
 
 .nav-container {

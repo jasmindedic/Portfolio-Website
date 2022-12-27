@@ -1,7 +1,7 @@
 .work_one_container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
 
     .my_work_headliner {
         position: relative;
@@ -206,6 +206,10 @@
 
 /* Media queries */
 @media(max-width: 1230px) {
+    .work_one_container {
+        padding-bottom: 6rem;
+    }
+
     .my_work_headliner {
         img {
             left: 30rem !important;

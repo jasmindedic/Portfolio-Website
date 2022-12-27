@@ -15,7 +15,9 @@ import { WorkFourthComponent } from './work-fourth/work-fourth.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ImprintComponent } from './imprint/imprint.component';
+import { DataProtectionComponent } from './data-protection/data-protection.component'
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { HttpClientModule } from '@angular/common/http'
     WorkFourthComponent,
     ContactComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    ImprintComponent,
+    DataProtectionComponent
   ],
   imports: [
     BrowserModule,

@@ -18,8 +18,6 @@
         position: absolute;
         z-index: 2;
     }
-
-
 }
 
 /* Styling for header content */
@@ -34,7 +32,6 @@
         padding-left: 6rem;
     }
 
-
     .portfolio_img {
         position: relative;
         width: 32rem;
@@ -44,7 +41,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
     }
 
     .header-headliner {
@@ -103,7 +99,6 @@
                     opacity: 0.7;
                 }
             }
-
         }
     }
 }
@@ -152,9 +147,7 @@
     .header-headliner {
         padding-right: 3rem !important;
     }
-
 }
-
 
 @media (max-width: 1015px) {
     .header_bubble {
@@ -169,7 +162,6 @@
         padding-right: 3rem !important;
     }
 }
-
 
 @media (max-width: 935px) {
 
@@ -325,7 +317,6 @@
 }
 
 /* Media queries for height beginning */
-
 @media screen and (max-width: 2600px) {
     @media screen and (max-height: 900px) {
         .portfolio_img {
@@ -340,9 +331,7 @@
             width: 24rem !important;
         }
 
-        .scroll_line {
-            display: none !important;
-        }
+
     }
 }
 
@@ -350,6 +339,10 @@
     @media screen and (max-height: 700px) {
         .portfolio_img {
             width: 22rem !important;
+        }
+
+        .scroll_line {
+            display: none !important;
         }
     }
 }
@@ -373,7 +366,6 @@
 @media screen and (min-width: 936px) {
     @media screen and (max-height: 820px) {
         .header_bubble {
-            /* width: 50vw !important; */
             max-height: 100vh;
         }
     }
@@ -434,7 +426,6 @@
     }
 }
 
-
 @media screen and (max-width: 935px) {
     @media screen and (max-height: 660px) {
         .portfolio_img {
@@ -465,35 +456,6 @@
         }
     }
 }
-
-/* @media screen and (max-width: 600px) {
-    @media screen and (max-height: 580px) {
-        .portfolio_img {
-            display: none;
-        }
-
-        .header_content {
-            justify-content: center;
-        }
-
-        .header-headliner {
-            line-height: 1.6rem !important;
-            padding-bottom: 6rem;
-
-            h1 {
-                font-size: 3.2rem !important;
-            }
-
-            h2 {
-                font-size: 2.2rem !important;
-            }
-        }
-
-        .header_bubble {
-            width: 90vw !important;
-        }
-    }
-} */
 
 @media screen and (max-width: 550px) {
     @media screen and (max-height: 930px) {
@@ -531,11 +493,15 @@
     }
 }
 
-
-
 /* Media queries for height end */
 
 /* Media query for big screens */
+@media(min-width: 1450px) {
+    .header-headliner {
+        padding-top: 8rem !important;
+    }
+}
+
 @media(min-width: 1650px) {
 
     .header_bubble {
@@ -556,8 +522,6 @@
             font-weight: 900;
         }
     }
-
-
 }
 
 @media(min-width: 1750px) {
